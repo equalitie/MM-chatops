@@ -1,0 +1,11 @@
+# cp local_settings.py.example local_settings.py
+GH_ORG = "YOUR GH ORG HERE"
+GH_access_token = "YOUR GH AUTH TOKEN HERE... PLEASE ONLY READ PERMS"
+
+# mmbot MM token
+MM_TEAM = GH_ORG
+MM_HOST = 'YOUR MM HOST HERE'
+MM_TOKEN = 'YOUR MM TOKEN HERE'
+MM_TEST_CHANNEL_ID = 'channel id\'s are in the view info'
+MM_SCHEME = 'https'
+MM_PORT = 443
