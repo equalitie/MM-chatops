@@ -1,7 +1,10 @@
 # Byte-compiled / optimized / DLL files
+virt/
+local_settings.py
 __pycache__/
 *.py[cod]
 *$py.class
+*.swp
 
 # C extensions
 *.so
