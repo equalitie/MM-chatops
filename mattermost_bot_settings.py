@@ -5,7 +5,7 @@ SSL_VERIFY = True
 DEBUG = True
 
 PLUGINS = [
-    'mattermost_bot.plugins',
+    # 'mattermost_bot.plugins',
     'plugins',
 ]
 
