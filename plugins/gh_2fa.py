@@ -13,10 +13,7 @@ def gh_bad(message):
     org = my_organizations[conf.GH_ORG]
     org_members_no_2fa = [member.login for member in org.get_members(filter_="2fa_disabled")]
 
-    msg = '\n'
-    for i in org_members_no_2fa:
-        msg += '- %s\n' % (i)
-
+    msg = '\n' + '\n'.join('- ' + (x) for x in (org_members_no_2fa))
     message.reply('%s' % (msg))
 
 gh_bad.__doc__ = "find GH org accnts w/o 2fa enabled"
