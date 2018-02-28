@@ -1,7 +1,14 @@
-# cp local_settings.py.example local_settings.py
+## for mattermost_bot_settings.py
+BOT_URL = 'YOUR MM API URL INCL SCHEMA eg https://foo.bar.tld/api/v4'
+BOT_LOGIN = 'bot@example.com'
+BOT_PASSWORD = 'correct horse battery staple'
+BOT_TEAM = 'mattermost_team_name_string'
+
+## below is for plugins/gh_2fa.py
 GH_ORG = "YOUR GH ORG HERE"
 GH_access_token = "YOUR GH AUTH TOKEN HERE... PLEASE ONLY READ PERMS"
 
+## below is for test.py
 # mmbot MM token
 MM_TEAM = GH_ORG
 MM_HOST = 'YOUR MM HOST HERE'
