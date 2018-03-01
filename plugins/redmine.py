@@ -1,4 +1,3 @@
-
 import local_settings as conf
 import re
 
@@ -9,8 +8,7 @@ regex = r'\#(\d+)'
 
 @listen_to(regex)
 def redmine_issue_responder(message, number):
-    url = "https://redmine.equalit.ie/issues/%s"
 
     l = re.findall(regex, message.get_message())
-    msg = '\n'.join([url % (x) for x in l])
+    msg = '\n'.join([conf.RM_URL + x for x in l])
     message.reply(msg)

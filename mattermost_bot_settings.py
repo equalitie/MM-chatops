@@ -2,7 +2,7 @@
 from local_settings import BOT_URL, BOT_LOGIN, BOT_PASSWORD, BOT_TEAM
 
 SSL_VERIFY = True
-DEBUG = True
+DEBUG = False
 
 PLUGINS = [
     # 'mattermost_bot.plugins',
@@ -32,7 +32,7 @@ code:
 settings:
     DEFAULT_REPLY_MODULE = 'my_default_reply'
 '''
-DEFAULT_REPLY_MODULE = None
+DEFAULT_REPLY_MODULE = 'my_default_reply'
 
 # or simple string for default answer
 # DEFAULT_REPLY = "pants pants pants"

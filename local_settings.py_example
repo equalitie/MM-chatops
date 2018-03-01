@@ -8,8 +8,10 @@ BOT_TEAM = 'mattermost_team_name_string'
 GH_ORG = "YOUR GH ORG HERE"
 GH_access_token = "YOUR GH AUTH TOKEN HERE... PLEASE ONLY READ PERMS"
 
+## below if for plugins/redmine.py
+RM_URL = "https://your.redmine.url/issues/"
+
 ## below is for test.py
-# mmbot MM token
 MM_TEAM = GH_ORG
 MM_HOST = 'YOUR MM HOST HERE'
 MM_TOKEN = 'YOUR MM TOKEN HERE'
