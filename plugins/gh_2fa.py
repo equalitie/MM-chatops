@@ -17,7 +17,7 @@ def gh_bad(message):
         msg = "All %s organization users have 2fa enabled :tada:"
     elif len(org_members_no_2fa) > 0:
         msg = '%s without 2fa are:\n' % (conf.GH_ORG) + '\n'.join('- ' + (x) for x in (org_members_no_2fa))
-        msg += "Those users can enable github 2fa at https://github.com/settings/security"
+        msg += "\nThose users can enable github 2fa at https://github.com/settings/security"
     else:
         msg = "Something strange happened in %s" % (os.path.basename(__file__))
     message.reply('%s' % (msg))
