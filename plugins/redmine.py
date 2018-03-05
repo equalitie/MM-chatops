@@ -12,3 +12,5 @@ def redmine_issue_responder(message, number):
     l = re.findall(regex, message.get_message())
     msg = '\n'.join([conf.RM_URL + x for x in l])
     message.reply(msg)
+
+redmine_issue_responder.__doc__ = "Return a link to a redmine issue"
